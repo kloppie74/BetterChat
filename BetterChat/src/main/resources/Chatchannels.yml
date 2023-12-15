@@ -1,0 +1,30 @@
+#ChatChannels.yml!
+#A Betterchat Channel system!
+#create your own channels, set permissions to it & switch easy between chats!
+#-----------------------------------------------------------------------------
+#
+#How to create a Channel?
+#Channels (Put here all your chats in!)
+# Default: "Global" (The default channel!
+# global: (ChatID)
+#   ChannelID: "global" (Your channel ID!) has to be the same as your first channelID (This is for the event listeners!)
+#   permissions: (Required permissions to send & receive messages!) + (Put in None for no required permission!)
+#   Format: (How should we send a message!) (Message will be added at the end of the format!)
+#
+#-----------------------------------------------------------------------------
+#
+
+
+Channels:
+  global:
+    ChannelID: "global"
+    Permission: "none"
+    Format: "%player_name% » "
+  staffchat:
+    ChannelID: "staffchat"
+    Permission: "Betterchat.chat.Staffchat"
+    Format: "[Staff] %player_name% » "
+  friendschat:
+    ChannelID: "friendschat"
+    Permission: "Betterchat.chat.friendschat"
+    Format: "[friendschat] %player_name% » "

@@ -1,0 +1,95 @@
+#The plugins Settings file!
+#Dont remove anything from the sections or the plugin will break!
+#Files will update automaticly & you dont have to do anything!
+#A Better plugin! Made by kloppie74
+
+
+#Which language should we use? (Will only be updated after server restart!)
+Language:
+  File: lang_en_us.yml
+
+#Enable/Disable the update checker!
+UpdateChecker: Enabled
+
+#Config Version, DO NOT EDIT THIS!
+ConfigVersion: 2.2.0
+
+#AntiSwear!
+#Enabled: true/false
+#Blacklisted_Words: all BLACKLISTED Words! These will be blocked!
+Antiswear:
+  enabled: true
+  Blacklisted_Words:
+    - shit
+    - pussy
+    - idiot
+
+#AntiSpam!
+#Enabled: true/false
+#Cooldown: How many seconds need between every message? Put to 0 to disable it!
+#allow-double-message: Can a player send the same message twice?
+Antispam:
+  enabled: true
+  cooldown: 3
+  allow-double-message: false
+
+#HoverMessages
+#Enabled: True/false
+#Layout: Use \n To create a new line!!!! When you dont use this the plugin will cause errors :D
+#suggested Command: Which command will be suggested when clicked on the hovermessage!
+HoverMessage:
+  Enable: true
+  Layout: "&cWorld: %player_world% \nMoney: %money%"
+  Suggest_Command:
+    - "msg {clickedname}"
+
+#Join events!
+#Placeholders supported!
+First_Join_Event:
+  Enable: true
+  Commands:
+    - say %player_name% joined the server for the first time!
+    - eco give %player_name% 100
+Join_format:
+  Enable: true
+  Format: "&a%player_name% &fJoined the server!"
+Quit_format:
+  Enable: true
+  Format: "&a%player_name% &fLeft the server!"
+
+#Msg formatting!
+# CommandSender = {sender}
+# MentionedPlayer = {target}
+# You are able to disable this feature!
+MSG_format:
+  Enable: true
+  Target: "&a{sender} &f> &aYou &b> &f"
+  Sender: "&aYou &f> &a{sender} &b> &f"
+  Console_log: "{sender} > {target} "
+  Console_log_Enable: true
+
+#Motd & Automatic broadcastes! Disable & Enable these features easy & change everything to what looks the best for you!
+# Intervals are in seconds!
+Motd_format:
+  Enable: true
+  Interval: 2
+  Motd_disabled_log: false
+  Motd:
+    - "&7Welcome on the server!"
+    - "&7Plugin created by Kloppie74"
+    - "&7Change this message in chat_format.yml!"
+    - "&7You can add more lines if you want!"
+    - "&aPlaceholders &f& &aChatcolors &7are supported!"
+Auto_Broadcast:
+  Global_Messages:
+    Enable: true
+    Header_And_Footer: true
+    Interval: 30
+    Prefix: "&7[&bBetterchat&7] "
+    Header: "&7*&7---==+==---&7*"
+    Footer: "&7*&7---==+==---&7*"
+    Sound: ''
+    Messages:
+      - "&7You are currently playing with {online} players!"
+      - "&7Plugin created by Kloppie74"
+      - "&7Change this message in Autobroadcastsettings.yml!"

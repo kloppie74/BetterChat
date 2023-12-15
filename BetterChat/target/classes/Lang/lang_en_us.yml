@@ -1,0 +1,30 @@
+#MSG Format
+MSG_Format:
+  msg_command_unknown: "Try /msg <username> <message>!"
+  msg_player_not_found: "Player not found!"
+  msg_not_a_player: "Only Players can use this command!"
+  msg_player_is_target: "You can not msg yourself!"
+  msg_target_offline: "Target is offline!"
+  msg_reply_null: "&cNobody Msged you!"
+#AntiSwear & #AntiSpam!
+Moderator:
+  AntiSpam:
+    Double_message: "&cHey! Do not spam the same message multiple times!"
+    Cooldown: "&cHey! You have to wait {seconds} more time to send a message again!"
+  Antiswear: "&cHey! You are not allowed to say &4&l{blocked}"
+#Commands & Subcommands
+Commands:
+  No_permissions: "&cHey! You dont have the permission for this (sub) command!"
+#Reload Format
+Reload:
+  Reload_files: "You successfully reloaded all the files!"
+  Update_Files: "You successfully updated all the files!"
+#Logs Format
+Logs:
+  Motd_disabled_log: "Motd disabled! Skipping event for %player_name%!"
+#CustomChannels!
+#All channels use the same message setup!
+#Placeholder: {channel} Will be replaced with players New/Current/Switched channelname!
+CustomChannel:
+  switch_message: "You Successfully switched to the channel: {channel}"
+  no_permission: "You do not have permissions for channel {channel}!"

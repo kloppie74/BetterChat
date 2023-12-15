@@ -1,0 +1,34 @@
+name: BetterChat
+version: 'V2.2.0'
+main: org.kloppie74.betterchat.BetterChat
+api-version: 1.19
+depend: [PlaceholderAPI]
+commands:
+  msg:
+    description: msg a player!
+    usage: /msg
+    aliases:
+      - whisper
+      - privatemsg
+      - privatemessage
+      - bettermsg
+      - betterchatmsg
+    permission: Betterchat.msg
+    permission-message: You dont have permissions for this command!
+  r:
+    description: reply a player!
+    usage: /r
+    aliases:
+      - reply
+      - rep
+    permission: Betterchat.reply
+    permission-message: You dont have permissions for this command!
+  betterchat:
+    description: Betterchat Main command! & subcommands!
+    usage: /betterchat
+  chat:
+    description: Switch between Betterchat Chats!
+    usage: /chat
+    aliases:
+      - channel
+      - switch
